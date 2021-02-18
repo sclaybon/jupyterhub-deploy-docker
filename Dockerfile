@@ -1,8 +1,8 @@
-FROM jupyterhub/jupyterhub:$JUPYTERHUB_VERSION
+FROM jupyterhub:$JUPYTERHUB_VERSION
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
 ARG JUPYTERHUB_VERSION
-FROM jupyterhub/jupyterhub:$JUPYTERHUB_VERSION
+FROM jupyterhub:$JUPYTERHUB_VERSION
 
 # Install dockerspawner, oauth, postgres
 RUN /opt/conda/bin/conda install -yq psycopg2=2.7 && \
